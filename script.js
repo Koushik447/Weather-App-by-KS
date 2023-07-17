@@ -39,7 +39,7 @@ function switchtab(clickedTab){
         else{
             searchform.classList.remove("active");
             weatherdetail.classList.remove("active");
-            loading.classList.add("active");
+            // loading.classList.add("active");
             getfromSessionStorage();
         }
     }   

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - KS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wheading">
+            <h1>WEATHER APP</h1>
+        </div>
+
+        <div class="section-choice">
+            <p class="tag" data-yourweather>Your Weather</p>
+            <p class="tag" data-searchweather>Search Weather</p>
+        </div>
+
+
+        <div class="weather-container-total">
+            <!-- grant location section -->
+
+            <div class="grant-access">
+                <img src="./Images/location.png" alt="" width="80" height="80" loading="lazy">
+                <h1>Grant Location Access</h1>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" data-grant-access>GRANT ACCESS</button>
+            </div>
+
+
+            
+            <!-- search section -->
+            <form class="search-section" data-search-form>
+                <input placeholder="Search For City . . ." data-search-input>
+                <button class="btn" type="submit">
+                    <img src="./Images/search.png">
+                </button>
+            </form>
+
+            <!-- loading scrin -->
+
+            <div class="loding-containt">
+                <img src="./Images/loading.gif" width="150" height="150">
+                <p>Loading..</p>
+            </div>
+
+
+
+            <!-- weather details -->
+            <div class="weather-details" weather-detail-user>
+                <div class="contry-nameflag">
+                    <h1 data-city-name></h1>
+                    <img data-contryIcon>
+                </div>
+
+                <p class="weather-desc" data-weather-desc></p>
+                <img class="weather-Img" data-weather-icon>
+                <h1 class="weather-temp" data-weather-temp></h1>
+
+                <div class="weather-desc-box">
+                    <div class="windspeed">
+                        <img src="./Images/wind.png" alt="">
+                        <h1>WINDSPEED</h1>
+                        <p class="as-windspeed" data-as-windspeed></p>
+                    </div>
+
+                    <div class="humidity">
+                        <img src="./Images/humidity.png" alt="">
+                        <h1>HUMIDITY</h1>
+                        <p class="as-humidity" data-as-humidity></p>
+                    </div>
+
+                    <div class="clouds">
+                        <img src="./Images/cloud.png" alt="">
+                        <h1>CLOUDS</h1>
+                        <p class="as-clouds" data-as-clouds></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

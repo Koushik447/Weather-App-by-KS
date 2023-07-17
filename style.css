@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    /* overflow-y:hidden ; */
+}
+.wheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.section-choice{
+    display: flex;
+    max-width: 550px;
+    width:90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.section-choice p{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.weather-container-total{
+    margin-top: 4rem;
+}
+/* search section css */
+.search-section{
+    margin: 0 auto ;
+    max-width: 550px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    display: none;
+}
+.search-section.active{
+    display: flex;
+}
+
+.search-section input{
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    border: none;
+    color: #F9F7F7;
+    font-size: 20px;
+}
+.search-section input::placeholder{
+    color: #F9F7F7;
+}
+.search-section button {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #DBE2EF ;
+    border-radius: 50%;
+    background: #3F72AF;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+.search-section img{
+    height: 30px;
+    width: 30px;
+}
+.search-section input:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.7);;
+}
+
+
+
+/* grant acssess css  */
+
+.grant-access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+.grant-access.active{
+    display: flex;
+}
+.grant-access button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background: #3F72AF;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #F9F7F7;
+    cursor: pointer;
+}
+
+
+/* weather report */
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+.weather-details.active{
+    display: flex;
+}
+.weather-details .contry-nameflag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.weather-details .contry-nameflag h1{
+    font-size: 2.5rem;
+}
+.weather-details .contry-nameflag img{
+    width: 2rem;
+    height: 2rem;
+}
+.weather-details .weather-desc{
+    font-size: 1rem;
+}
+.weather-details .weather-Img{
+    width: 80px;
+    height: 80px;
+}
+
+.weather-details .weather-temp{
+    font-size: 3rem;
+}
+.weather-details .weather-desc-box{
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    height: 200px;
+
+}
+.windspeed{
+    background: #3f72af;
+    border-radius: 5px;
+    width:30% ;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.windspeed img{
+    width: 50px;
+    height: 50px;
+}
+.windspeed h1{
+    font-size: 1.5rem;
+
+}
+.windspeed p{
+    font-size: 1.5rem;
+}
+.humidity{
+    background: #3f72af;
+    border-radius: 5px;
+    width:30%;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.humidity img{
+    width: 50px;
+    height: 50px;
+}
+.humidity h1{
+    font-size: 1.5rem;
+    
+}
+.humidity p{
+    font-size: 1.5rem;
+}
+.clouds{
+    background: #3f72af;
+    border-radius: 5px;
+    width:30%;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clouds img{
+    width: 50px;
+    height: 50px;
+}
+.clouds h1{
+    font-size: 1.5rem;
+    
+}
+.clouds p{
+    font-size: 1.5rem;
+}
+
+.loding-containt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.loding-containt.active{
+    display: flex;
+}
+
+.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    /* padding: 3px; */
+}
